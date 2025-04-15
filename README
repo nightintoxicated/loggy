@@ -19,4 +19,9 @@ loggy($logfile, $description, @data, $moredata);
 loggy("dumper.log", "a dumper log", Dumper($aoh));
 
 
+need to log with UTF8?
+in loggy.pm add:
+use open ":std", ":encoding(UTF-8)";
 
+and alter the open statement in the loggy function to:
+open (WFH, '>>:encoding(UTF-8)', "$dir/$logfile.log")
