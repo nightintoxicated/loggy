@@ -13,5 +13,6 @@ sub loggy {
   foreach my $item (@passed) {
     print WFH "$description: $item\n";
   }
+  print "--------------\n";
 }
 1;
