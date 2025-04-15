@@ -1,4 +1,5 @@
 make a dir loggy_logs in the directory youre running the script from
+(mkdir loggy_logs)
 
 ##USAGE:
 
