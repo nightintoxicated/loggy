@@ -4,6 +4,7 @@ make a dir loggy_logs in the directory youre running the script from
 
 use lib '.';
 use loggy;
+system("rm -f loggy_logs/*"); #if you want to clear logs before each run, otherwise theyll append
 
 my $logfile = "testlog";
 my $description = "test desc";
