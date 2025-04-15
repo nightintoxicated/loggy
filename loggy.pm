@@ -8,7 +8,7 @@ sub loggy {
   my $dir = "loggy_logs";
   die "directory loggy_logs doesnt exist" unless -d $dir;
 
-  open (WFH, '>>', "$dir/$logfile.log") or die "LOGGY: could not open log file for $dir.log\n";
+  open (WFH, '>>', "$dir/$logfile.log") or die "LOGGY: could not open log file for $logfile.log\n";
   my @passed = @_;
   foreach my $item (@passed) {
     print WFH "$description: $item\n";
