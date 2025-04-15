@@ -1,0 +1,20 @@
+make a dir loggy_logs in the directory youre running the script from
+
+##USAGE:
+
+use lib '.';
+use loggy;
+
+my $logfile = "testlog";
+my $description = "test desc";
+
+my $data = "either a scalar"
+my @data = "or a list";
+my $optional_moredata = "you can add more than one thing";
+loggy($logfile, $description, @data, $moredata);
+
+#logging data dumper results
+loggy("dumper.log", "a dumper log", Dumper($aoh));
+
+
+
